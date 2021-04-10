@@ -1,0 +1,25 @@
+@import "../../../node_modules/bulma/bulma.sass";
+
+html,
+body {
+  overflow: auto;
+}
+
+* {
+  scrollbar-width: thin;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #aaaaaa;
+  border-radius: 20px;
+  border: 2px solid #eeeeee;
+}

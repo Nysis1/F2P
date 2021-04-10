@@ -1,0 +1,32 @@
+<div class="scrolldiv" style="width:50vw; border-right: 1px solid #1167B1;height: calc(100vh - 58px); overflow-y:auto">
+    <h1 class="title is-2" style="text-align: center">Game list</h1>
+    <div class="container" style="margin: 0 20px" *ngIf="games">
+      <div
+        class="columns"
+        *ngFor="let game of games"
+        [routerLink]=""
+        (click)="updateGame(game)"
+        style="margin: 10px; border-radius: 5px;box-shadow: -1px 1px 5px grey;"
+      >
+        <div class="column is-4">
+          <img [src]="game.thumbnail" alt="" />
+        </div>
+        <div class="column is-8">
+          <div>
+            <b>{{ game.title }}</b>
+          </div>
+          <div>
+            {{ game.short_description }}
+          </div>
+          <div>
+            <div 
+              [style.backgroundColor]="getColor(game.genre)"
+              style="display: inline-block; color : white;border-radius: 5px;margin-top: 5px; padding: 0 5px;" 
+            >
+              {{ game.genre }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

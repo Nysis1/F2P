@@ -1,0 +1,35 @@
+<div style="width:50vw; overflow-y: auto;height: calc(100vh - 58px);">
+    <h1 class="title is-2" style="text-align: center">{{ game?.title }}</h1>
+    <br />
+    <div class="container" style="margin: 0 30px">
+      <div
+        class="columns"
+      >
+        <div class="column is-6">
+          <img [src]="game?.thumbnail" alt="" />
+        </div>
+        <div class="column is-6">
+          <div *ngIf="game?.id">
+            <b>genre: </b>{{ game?.genre }}
+          </div>
+          <div>
+              <b>Developer: </b>{{ game?.developer }}
+          </div>
+          <div>
+            <b>Platform: </b>{{ game?.platform }}
+          </div>
+          <div>
+            <b>Release: </b>{{ game?.release_date }}
+          </div>
+          <div>
+            <a class="button" href="{{ game?.game_url }}" style="margin-top: 10px">
+              Game page
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <b>Description:&nbsp;</b>{{ game?.short_description }}
+      </div>
+    </div>
+</div>
