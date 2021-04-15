@@ -2,7 +2,7 @@
 # routing internally.
 [[redirects]]
   from = "/api/games"
-  to = "https://www.freetogame.com/api/"
+  to = "https://www.freetogame.com/api/games"
   status = 200
 
 [[headers]]
