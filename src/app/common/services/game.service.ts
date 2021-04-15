@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators'
 
 const optionRequete = {
   headers: new HttpHeaders({ 
-    'Access-Control-Allow-Origin':'https://www.freetogame.com/api/',
+    'Access-Control-Allow-Origin':'https://www.freetogame.com/api/games',
   })
 };
 
