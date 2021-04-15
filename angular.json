@@ -76,7 +76,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-tuto:build:production"
+              "browserTarget": "angular-tuto:build:production",
+              "proxyConfig": "config/proxy.conf.json"
             }
           }
         },
