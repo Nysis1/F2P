@@ -7,14 +7,10 @@ import { GameService } from 'src/app/common/services/game.service';
   selector: 'app-game-detail',
   templateUrl: './game-detail.component.html',
   styleUrls: ['./game-detail.component.css'],
-  providers: [GameService]
 })
 export class GameDetailComponent implements OnInit {
   
-  @Input()
-  game!: Game;
-
-  constructor(private gameService: GameService) {}
+  constructor(public gameService: GameService) {}
 
   ngOnInit() {}
 }
