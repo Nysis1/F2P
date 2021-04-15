@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiBaseUrl: "https://f2p.netlify.app/api/"
+  apiBaseUrl: "https://www.freetogame.com/api/"
 };
