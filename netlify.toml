@@ -1,8 +1,8 @@
 # The following redirect is intended for use with most SPAs that handle
 # routing internally.
 [[redirects]]
-  from = "/api/*"
-  to = "/index.html"
+  from = "/api/games"
+  to = "https://www.freetogame.com/api/"
   status = 200
 
 [[headers]]
