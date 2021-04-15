@@ -5,6 +5,11 @@
   to = "https://www.freetogame.com/api/games"
   status = 200
 
+  [[redirects]]
+  from = "/api/*"
+  to = "https://www.freetogame.com/api/*"
+  status = 200
+
 [[headers]]
   # Define which paths this specific [[headers]] block will cover.
   for = "/*"
