@@ -1,6 +1,13 @@
 import { Injectable } from '@angular/core'
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { environment } from '../../../environments/environment'
+
+const optionRequete = {
+  headers: new HttpHeaders({ 
+    'Access-Control-Allow-Origin':'*',
+    'mon-entete-personnalise':'maValeur'
+  })
+};
 
 @Injectable({
   providedIn: 'root'
@@ -15,13 +22,13 @@ export class GameService {
   }
 
   getGameList() {
-    this.http.get(environment.apiBaseUrl + '/games').subscribe((data) => {
+    this.http.get(environment.apiBaseUrl + '/games', optionRequete).subscribe((data) => {
       this.gameList = data;
     });
   }
 
   getGameDetails(gameId: number) {
-    this.http.get(environment.apiBaseUrl + '/game?id=' + gameId).subscribe((data) => {
+    this.http.get(environment.apiBaseUrl + '/game?id=' + gameId, optionRequete).subscribe((data) => {
       this.gameDetails = data;
     });
   }
