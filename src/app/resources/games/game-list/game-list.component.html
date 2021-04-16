@@ -1,15 +1,15 @@
-<div class="scrolldiv" style="width:50vw; border-right: 1px solid #1167B1;height: calc(100vh - 58px); overflow-y:auto">
-    <h1 class="title is-2" style="text-align: center">Game list</h1>
+<div class="scrolldiv" style="width:50vw; border-right: 1px solid #1167B1;height: calc(100vh - 60px); overflow-y:auto">
+    <h1 class="title is-2" style="text-align: center; margin-top: 10px">Game list</h1>
     <div class="container" style="margin: 0 20px" *ngIf="gameService.gameList">
       <div
-        class="columns"
+        class="columns divButton"
         *ngFor="let game of gameService.gameList"
-        [routerLink]=""
+        [routerLink]="[]"
         (click)="gameService.getGameDetails(game.id)"
         style="margin: 10px; border-radius: 5px;box-shadow: -1px 1px 5px grey;"
       >
         <div class="column is-4">
-          <img [src]="game.thumbnail" alt="" />
+          <img  [src]="game.thumbnail" alt=""/>
         </div>
         <div class="column is-8">
           <div>

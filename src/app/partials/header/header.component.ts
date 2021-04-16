@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GameService } from 'src/app/common/services/game.service';
 
 @Component({
   selector: 'app-header',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public gameService: GameService) { }
+  
   ngOnInit(): void {
+  }
+
+  searchGame(search : any) {
+    console.log(search.value)
+    this.gameService.searchGame(search.value)
   }
 
 }

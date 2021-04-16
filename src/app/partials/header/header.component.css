@@ -1,0 +1,17 @@
+.searchbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.input {
+  width: 300px;
+}
+
+.logo {
+  position: absolute;
+  margin: 3px;
+  height: 50px;
+}
