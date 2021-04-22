@@ -38,12 +38,10 @@
       <br/>
       <div class="">
         <b>Screenshots:</b><br/>
-        <div
+        <img 
           class="columns"
           *ngFor="let screenshot of gameService.gameDetails.screenshots"
-          style="margin: 10px; border-radius: 5px;box-shadow: -1px 1px 5px grey;"
-        >
-        <img [src]=screenshot.image alt="screenshot"/>
-      </div>
+          style="margin: 10px; box-shadow: 0px 0px 5px grey;"
+          [src]=screenshot.image alt="screenshot"/>
     </div>
 </div>
