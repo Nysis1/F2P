@@ -12,10 +12,4 @@ export class HeaderComponent implements OnInit {
   
   ngOnInit(): void {
   }
-
-  searchGame(search : any) {
-    console.log(search.value)
-    this.gameService.searchGame(search.value)
-  }
-
 }

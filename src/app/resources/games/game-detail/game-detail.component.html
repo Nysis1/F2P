@@ -1,4 +1,4 @@
-<div style="width:50vw; overflow-y: auto;height: calc(100vh - 56px);">
+<div [ngStyle]="{'width' : widthComponent}" style="overflow-y: auto;height: calc(100vh - 56px);">
     <h1 class="title is-2" style="text-align: center; font-family: Nunito, sans-serif; margin-top: 0px">{{ gameService.gameDetails?.title }}</h1>
     <div class="container" style="margin: 0 30px">
       <div

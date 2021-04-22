@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { Game } from 'src/app/common/interfaces/game';
 import { GameService } from 'src/app/common/services/game.service';
@@ -12,5 +12,24 @@ export class GameDetailComponent implements OnInit {
   
   constructor(public gameService: GameService) {}
 
+  @Input() detailOn: boolean = false;
+  @Input() phoneDisplay: boolean = false;
+
+  widthComponent = '50vw'
+
   ngOnInit() {}
+
+  ngOnChanges(changes: SimpleChanges) {
+
+    if (this.phoneDisplay) {
+      console.log("Change detail")
+      console.log(changes.detailOn.currentValue)
+  
+      if (changes.detailOn.currentValue) {
+        this.widthComponent = '100vw'
+      } else {
+        this.widthComponent = '0vw'
+      } 
+    }
+  }
 }

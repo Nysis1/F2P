@@ -1,49 +1,22 @@
 .scrolldiv {
-  background: /* Shadow covers */ linear-gradient(
-      white 30%,
-      rgba(255, 255, 255, 0)
-    ),
-    linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%,
-    /* Shadows */
-      radial-gradient(
-        farthest-side at 50% 0,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0)
-      ),
-    radial-gradient(
-        farthest-side at 50% 100%,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0)
-      )
-      0 100%;
-  background: /* Shadow covers */ linear-gradient(
-      white 30%,
-      rgba(255, 255, 255, 0)
-    ),
-    linear-gradient(rgba(255, 255, 255, 0), white 70%) 0 100%,
-    /* Shadows */
-      radial-gradient(
-        farthest-side at 50% 0,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0)
-      ),
-    radial-gradient(
-        farthest-side at 50% 100%,
-        rgba(0, 0, 0, 0.2),
-        rgba(0, 0, 0, 0)
-      )
-      0 100%;
+  background: linear-gradient(180deg, #fff, rgba(255, 255, 255, 0)),
+    linear-gradient(0deg, #fff, rgba(255, 255, 255, 0)),
+    linear-gradient(180deg, #aaa, rgba(255, 255, 255, 0)),
+    linear-gradient(0deg, #aaa, rgba(255, 255, 255, 0));
+  background-position: 0 0, 0 100%, 0 0, 0 100%;
   background-repeat: no-repeat;
   background-color: white;
   background-size: 100% 40px, 100% 40px, 100% 14px, 100% 14px;
-  /* Opera doesn't support this in the shorthand */
   background-attachment: local, local, scroll, scroll;
+}
+
+.title {
+  margin-bottom: 15px;
 }
 
 .divButton {
   cursor: pointer;
   outline: none;
-  background-color: #fff;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
@@ -57,4 +30,16 @@
   background-color: #eee;
   box-shadow: 0 5px #666;
   transform: translateY(1px);
+}
+
+.searchbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+}
+
+.input {
+  margin: 0 20px;
 }

@@ -1,13 +1,5 @@
-.searchbar {
+.navbar {
   display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.input {
-  width: 300px;
 }
 
 .logo {

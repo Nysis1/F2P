@@ -10,9 +10,8 @@ export class HomeComponent implements OnInit {
 
   public game$: Game;
 
-  childEventClicked(game: Game) {
-    this.game$ = game;
-  }
+  public detailOn: boolean = false;
+  public phoneDisplay: boolean = false;
 
   constructor() {
     this.game$ = {
@@ -58,6 +57,17 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (window.innerWidth < 700) {
+      this.phoneDisplay = true
+    }
+  }
+
+  mask() {
+    this.detailOn = false
+  }
+
+  setDetailOn() {
+    this.detailOn = true
   }
 
 }

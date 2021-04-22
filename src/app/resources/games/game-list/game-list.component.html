@@ -1,11 +1,14 @@
-<div class="scrolldiv" style="width:50vw; border-right: 1px solid #1167B1;height: calc(100vh - 56px); overflow-y:scroll">
+<div class="scrolldiv" [ngStyle]="{'width' : widthComponent}" style="border-right: 1px solid #1167B1;height: calc(100vh - 56px); overflow-y:scroll">
     <h1 class="title is-2" style="text-align: center; margin-top: 10px">Game list</h1>
     <div class="container" style="margin: 0 0px" *ngIf="gameService.gameList">
+      <div class="searchbar">
+        <input class="input" type="text" placeholder="Search a game" (keyup)="searchGame($event.target)">
+      </div>
       <div
         class="columns divButton"
         *ngFor="let game of gameService.gameList"
         [routerLink]="[]"
-        (click)="gameService.getGameDetails(game.id)"
+        (click)="getGameDetail(game.id)"
         style="margin: 10px; border-radius: 5px;box-shadow: -1px 1px 5px grey;"
       >
         <div class="column is-4">
