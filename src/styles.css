@@ -6,6 +6,10 @@
   color: white;
 }
 
+.dark-theme .returnButton {
+  color: white;
+}
+
 .dark-theme div h1 {
   background-color: #223344;
   color: white;
