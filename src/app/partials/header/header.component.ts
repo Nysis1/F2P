@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GameService } from 'src/app/common/services/game.service';
+import { ThemingService } from 'src/app/common/services/theming.service';
 
 @Component({
   selector: 'app-header',
@@ -8,8 +8,17 @@ import { GameService } from 'src/app/common/services/game.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public gameService: GameService) { }
+
+  constructor(public theming: ThemingService) { }
   
   ngOnInit(): void {
+  }
+
+  changeTheme() {
+    if (this.theming.theme.getValue() == "light-theme") {
+      this.theming.theme.next("dark-theme")
+    } else {
+      this.theming.theme.next("light-theme")
+    }
   }
 }

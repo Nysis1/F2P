@@ -1,2 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.dark-theme div {
+  background-color: #223344 !important;
+  color: white;
+}
+
+.dark-theme div h1 {
+  background-color: #223344;
+  color: white;
+}
+
+.dark-theme .divButton {
+  box-shadow: -1px 1px 5px black !important;
+}
+
+.dark-theme div .searchbar input {
+  box-shadow: -1px 1px 5px black !important;
+  background-color: #567;
+  color: lightgray;
+}
+
+.dark-theme div .searchbar input::placeholder {
+  color: lightgray;
+}
+
+.dark-theme .divButton:hover .column,
+.dark-theme .divButton:hover .column div {
+  background-color: #567 !important;
+}
+
+.dark-theme .divButton .column,
+.dark-theme .divButton .column div {
+  background-color: #456 !important;
+}

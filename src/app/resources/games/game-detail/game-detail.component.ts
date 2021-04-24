@@ -1,6 +1,4 @@
 import { Component, Input, OnInit, SimpleChanges } from '@angular/core';
-import { Subscription } from 'rxjs';
-import { Game } from 'src/app/common/interfaces/game';
 import { GameService } from 'src/app/common/services/game.service';
 
 @Component({

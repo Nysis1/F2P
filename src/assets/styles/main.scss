@@ -18,8 +18,18 @@ body {
   background: #eeeeee;
 }
 
+.dark-theme *::-webkit-scrollbar-track {
+  background: #789;
+}
+
 *::-webkit-scrollbar-thumb {
   background-color: #aaaaaa;
   border-radius: 20px;
   border: 2px solid #eeeeee;
+}
+
+.dark-theme *::-webkit-scrollbar-thumb {
+  background-color: #cde;
+  border-radius: 20px;
+  border: 2px solid #789;
 }
