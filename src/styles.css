@@ -38,3 +38,8 @@
 .dark-theme .divButton .column div {
   background-color: #456 !important;
 }
+
+.dark-theme .divButton {
+  overflow: hidden;
+  border-radius: 5px;
+}

@@ -21,13 +21,13 @@
           <div>
             {{ game.short_description }}
           </div>
-          <div>
-            <div 
+          <div class="tagContainer">
+            <span 
               [style.backgroundColor]="getColor(game.genre)"
               style="display: inline-block; color : white;border-radius: 5px;margin-top: 5px; padding: 0 5px;" 
             >
               {{ game.genre }}
-            </div>
+            </span>
           </div>
         </div>
       </div>
