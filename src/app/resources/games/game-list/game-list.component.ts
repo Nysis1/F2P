@@ -11,7 +11,7 @@ export class GameListComponent implements OnInit {
   colors = [{ status: "MMORPG", color: "orange" }, { status: "MMO", color: "orange" }, 
     { status: "Shooter", color: "red" }, { status: "Social", color: "green" },
     { status: "Card Game", color: "blue" }, { status: "Strategy", color: "purple" },
-    { status: "MOBA", color: "pink" }, { status: "Racing", color: "black" },
+    { status: "MOBA", color: "pink" },{ status: "Moba", color: "pink" }, { status: "Racing", color: "black" },
     { status: "Fighting", color: "yellow"}, { status: "Sports", color: "grey"},
     { status: "Fantasy", color: "brown"}, { status: " MMORPG", color: "orange" },
     { status: "Battle Royale", color: "lightblue"}, { status: "Action RPG", color: "crimson"},
