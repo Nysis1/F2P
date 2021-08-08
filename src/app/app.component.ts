@@ -32,7 +32,6 @@ export class AppComponent implements OnInit, OnDestroy {
    * Apply the current theme on components with overlay (e.g. Dropdowns, Dialogs)
    */
   private applyThemeOnOverlays() {
-    console.log("test3")
     // remove old theme class and add new theme class
     // we're removing any css class that contains '-theme' string but your theme classes can follow any pattern
     const overlayContainerClasses = this.overlayContainer.getContainerElement().classList;
